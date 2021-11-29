@@ -100,7 +100,7 @@ The type or types of documents to allow selection of. May be an array of types a
 
 - On Android these are MIME types such as `text/plain` or partial MIME types such as `image/*`. See [common MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types).
 - On iOS these must be Apple "[Uniform Type Identifiers](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/UTIRef/Articles/System-DeclaredUniformTypeIdentifiers.html)"
-- If `type` is omitted it will be treated as `*/*` or `public.item`.
+- If `type` is omitted it will be treated as `*/*` or `public.content`.
 
 ##### [iOS only] `presentationStyle`:`'fullScreen' | 'pageSheet' | 'formSheet' | 'overFullScreen'`
 
@@ -167,7 +167,7 @@ The base64 encoded content of the picked file if the option `readContent` was se
 
 `DocumentPicker.types.*` provides a few common types for use as `type` values, these types will use the correct format for each platform (MIME types on Android, UTIs on iOS).
 
-- `DocumentPicker.types.allFiles`: All document types, on Android this is `*/*`, on iOS is `public.item`
+- `DocumentPicker.types.allFiles`: All document types, on Android this is `*/*`, on iOS is `public.content`
 - `DocumentPicker.types.images`: All image types
 - `DocumentPicker.types.plainText`: Plain text files
 - `DocumentPicker.types.audio`: All audio types
